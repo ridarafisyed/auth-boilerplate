@@ -14,12 +14,15 @@
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
-    "experss": "^0.0.1-security"
+    "experss": "^0.0.1-security",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3"
   },
   "devDependencies": {
     "@types/compression": "^1.7.5",
     "@types/cookie-parser": "^1.4.6",
     "@types/cors": "^2.8.17",
+    "@types/mongoose": "^5.11.97",
     "nodemon": "^3.0.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"

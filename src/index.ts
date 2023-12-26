@@ -4,6 +4,8 @@ import bodyParser from "body-parser";
 import cookieParser from "cookie-parser"
 import compression from "compression"
 import cors from "cors"
+import mongoose from "mongoose";
+
 
 const app = express()
 const hostname = "127.0.0.1";
@@ -26,3 +28,9 @@ app.get("/", (req, res) => { res.send("Hello World") })
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+const MONGO_URL = `mongodb+srv://ridarafisyed:H6mbE8OLrM9httBN@mymaincluster.bslsqzr.mongodb.net/?retryWrites=true&w=majority`
+
+mongoose.Promise = Promise;
+mongoose.connect(MONGO_URL)
+mongoose.connection.on('error', (error:Error)=> console.log(error))
