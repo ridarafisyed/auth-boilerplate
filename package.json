@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon",
+    "dev": "ts-node --env-file=.env --watch  ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +15,7 @@
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "experss": "^0.0.1-security",
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.3"
